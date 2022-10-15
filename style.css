@@ -1,0 +1,118 @@
+body {
+    background-color: #7164b4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search__input {
+    width: 350px;
+    height: 35px;
+    padding: 7px;
+}
+
+.search__label {
+    color: white;
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.autocomplete {
+    box-sizing: border-box;
+    list-style: none;
+    width: 350px;
+    min-height: 170px;
+    max-height: 230px;
+    padding: 0;
+    margin: 0;
+    border:1px solid lavender;
+    border-top: none;
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.autocomplete__item {
+    padding: 7px;
+    color: white;
+}
+
+.autocomplete__item:hover {
+    background-color: lavender;
+    color: black;
+}
+
+.repositories {
+    width: 350px;
+}
+
+.repositories__item {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: 1px solid lavender;
+    width: 100%;
+}
+
+.delete-button {
+    display: flex;
+    position: relative;
+    border: none;
+    padding: 0;
+    background-color: #7164b4;
+    width: 30px;
+    height: 30px;
+}
+
+.delete-button::before,
+.delete-button::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: yellow;
+}
+
+.delete-button::before {
+    transform: translate(5px, 13px) rotate(45deg);
+}
+
+.delete-button::after {
+    transform: translate(5px, 13px) rotate(-45deg);
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    margin: 0;
+}
+
+span {
+    color: white;
+    font-weight: 300;
+}
